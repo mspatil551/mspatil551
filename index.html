@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Mahesh Patil, a MEAN Stack Developer with 4+ years of experience building modern, scalable and high-performance web applications.">
+    <meta name="keywords"
+        content="MEAN Stack, Full Stack Developer, Angular, Node.js, MongoDB, Express, Web Development">
+    <meta name="author" content="Mahesh Patil">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mahesh Patil | MEAN Stack Developer">
+    <meta property="og:description"
+        content="Portfolio of Mahesh Patil, a MEAN Stack Developer with 4+ years of experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mahesh Patil | MEAN Stack Developer">
+    <meta name="twitter:description"
+        content="Portfolio of Mahesh Patil, a MEAN Stack Developer with 4+ years of experience.">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+
+    <title>Mahesh Patil | MEAN Stack Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&lt;/&gt;</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <span class="logo-bracket">&lt;</span>MP<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav-status" aria-label="Open to work">
+                <span class="status-dot"></span>
+                <span class="status-text">Open to Opportunities</span>
+            </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <!-- <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li> -->
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+                <li role="none"><a href="#contact" class="nav-link nav-link-cta" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-label="Hero section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- <div class="hero-badge" data-animate="fade-up">
+                    <span class="badge-dot"></span>
+                    <span>Available for Opportunities</span>
+                </div> -->
+
+                <h1 class="hero-title" data-animate="fade-up" data-delay="0.1">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">MAHESH PATIL</span>
+                </h1>
+
+                <h2 class="hero-subtitle" data-animate="fade-up" data-delay="0.2">
+                    MEAN Stack Developer
+                </h2>
+
+                <p class="hero-description" data-animate="fade-up" data-delay="0.3">
+                    I build scalable, high-performance web applications using the MEAN stack, with a focus on clean
+                    architecture, intuitive user experiences, and production-ready solutions.
+                </p>
+                <div class="hero-actions" data-animate="fade-up" data-delay="0.4">
+                    <a href="#projects" class="btn btn-primary magnetic-btn">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-btn">
+                        <span>Let's Connect</span>
+                    </a>
+                    <a href="assets/resume/resume.pdf" class="btn btn-ghost magnetic-btn" download>
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="0.4">
+                    <div class="stat-item">
+                        <!-- <span class="stat-number" data-count="4">4</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years of Experience</span> -->
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-photo-container">
+                    <div class="hero-tech-stack" aria-label="Technologies">
+
+                        <div class="tech-icon tech-angular" title="Angular">
+                            <img src="assets/icons/angular.svg" alt="Angular">
+                        </div>
+
+                        <div class="tech-icon tech-node" title="Node.js">
+                            <img src="assets/icons/nodejs.svg" alt="Node.js">
+                        </div>
+
+                        <div class="tech-icon tech-typescript" title="TypeScript">
+                            <img src="assets/icons/typescript.svg" alt="TypeScript">
+                        </div>
+
+                        <div class="tech-icon tech-mongodb" title="MongoDB">
+                            <img src="assets/icons/mongodb.svg" alt="MongoDB">
+                        </div>
+
+                        <div class="tech-icon tech-express" title="Express.js">
+                            <img src="assets/icons/express.svg" alt="Express.js">
+                        </div>
+
+                    </div>
+                    <div class="hero-photo-wrapper">
+                        <img src="./assets/images/profile-photo.png" alt="Mahesh Patil - MEAN Stack Developer"
+                            class="hero-photo" loading="eager">
+                        <div class="hero-photo-glow"></div>
+                        <div class="hero-photo-ring"></div>
+                    </div>
+                    <div class="hero-photo-decoration">
+                        <div class="decoration-dot"></div>
+                        <div class="decoration-line"></div>
+                        <!-- <div class="decoration-bracket">&lt;/&gt;</div> -->
+                    </div>
+                </div>
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section" aria-label="About section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">About Me</span>
+                <h2 class="section-title">A little about me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-animate="fade-up" data-delay="0.1">
+                    <p class="about-lead">
+                        I'm a <strong>MEAN Stack Developer</strong> with over 4 years of professional experience
+                        building modern web applications. I specialize in creating scalable, performant solutions that
+                        solve real business problems.
+                    </p>
+                    <p>
+                        Throughout my career, I've worked with multiple companies ranging from startups to established
+                        enterprises, contributing to projects across various industries. My expertise spans the full
+                        development lifecycle, from database design and API development to responsive frontend
+                        interfaces and deployment.
+                    </p>
+                    <p>
+                        I believe in writing clean, maintainable code and creating intuitive user experiences. My
+                        approach combines technical excellence with a strong focus on delivering value through
+                        thoughtful engineering decisions.
+                    </p>
+                </div>
+
+                <div class="about-stats" data-animate="fade-up" data-delay="0.2">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-value">
+                            <span class="counter" data-target="4">0</span><span class="counter-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-value">
+                            <span class="counter" data-target="4">0</span>
+                        </div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-value">
+                            <span class="counter" data-target="5">0</span><span class="counter-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-value">
+                            <span class="counter" data-target="20">0</span><span class="counter-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section" aria-label="Experience section">
+    <div class="container">
+        <div class="section-header" data-animate="fade-up">
+            <span class="section-eyebrow">Career</span>
+            <h2 class="section-title">Professional Journey</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-line" aria-hidden="true"></div>
+
+            <!-- QualityKiosk Technologies -->
+            <div class="timeline-item" data-animate="fade-up" data-delay="0.1">
+                <div class="timeline-marker">
+                    <div class="timeline-dot timeline-dot-current"></div>
+                    <div class="timeline-glow"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-role">Software Developer</h3>
+                        <span class="timeline-company">QualityKiosk Technologies Pvt. Ltd. · Full-time</span>
+                        <span class="timeline-location">Mumbai, India · Onsite at SBILife</span>
+                        <span class="timeline-date">Dec 2024 - Present · 1 year 9 months</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Architected and deployed enterprise-grade monitoring solutions for SBILife, India's largest life insurer. Built custom dashboards and data pipelines integrating multiple APM tools to deliver real-time visibility into application performance and infrastructure health.</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Architected a unified monitoring platform integrating Dynatrace, eG Enterprise, and IBM Instana to consolidate application performance metrics across enterprise systems.</li>
+                            <li>Engineered custom dashboard solutions including Disk Prediction and Application Architecture visualizations where native monitoring tools lacked required capabilities.</li>
+                            <li>Designed and implemented data pipelines using Node.js and Cron jobs to fetch metrics from Dynatrace, eG, and databases, processing and indexing data into Elastic Search for real-time dashboard consumption.</li>
+                            <li>Built responsive frontend interfaces with Angular and Tailwind CSS, delivering intuitive visualizations for complex infrastructure data.</li>
+                            <li>Managed Linux server infrastructure and Tomcat service configurations to ensure high availability of monitoring services.</li>
+                            <li>Provided 24/7 application support and data management, ensuring continuous monitoring coverage for critical business applications.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Elastic Search</span>
+                            <span class="tech-tag">Dynatrace</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Tomcat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facile Services -->
+            <div class="timeline-item" data-animate="fade-up" data-delay="0.2">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-glow"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-role">Full Stack Developer</h3>
+                        <span class="timeline-company">Facile Services Pvt Ltd · Full-time</span>
+                        <span class="timeline-location">Remote</span>
+                        <span class="timeline-date">Jan 2023 - Jun 2024 · 1 year 6 months</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Delivered end-to-end solutions for B2B SaaS platforms serving enterprise clients. Led development of predictive analytics tools and browser extensions while managing full-stack architecture across multiple projects.</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Led frontend development for Pulse and Predictiv B2B platforms, architecting scalable Angular applications using PrimeNG component libraries.</li>
+                            <li>Engineered backend services with Node.js, integrating MongoDB, MySQL, and Elastic Search for high-performance data operations.</li>
+                            <li>Developed and deployed a Chrome Extension for the Predictiv application, extending platform capabilities directly into user workflows.</li>
+                            <li>Collaborated with cross-functional teams to deliver features from concept to production, ensuring code quality through peer reviews and automated testing.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">PrimeNG</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Elastic Search</span>
+                            <span class="tech-tag">Chrome Extension</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Novvr -->
+            <div class="timeline-item" data-animate="fade-up" data-delay="0.3">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-glow"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-role">MEAN Stack Developer</h3>
+                        <span class="timeline-company">Novvr · Full-time</span>
+                        <span class="timeline-location">Remote</span>
+                        <span class="timeline-date">Mar 2022 - Aug 2022 · 6 months</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Built core infrastructure for Bitbatua, a UPI-based payment platform leveraging blockchain technology. Developed comprehensive admin systems and user-facing features including KYC workflows, wallet management, and real-time notifications.</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Developed Bitbatua, a UPI-integrated payment platform, implementing secure transaction flows with Angular frontend and Node.js backend services.</li>
+                            <li>Built comprehensive Admin Panel for platform management, including user KYC verification workflows and compliance tools.</li>
+                            <li>Implemented Wallet management system with real-time balance tracking and transaction history using MongoDB aggregation pipelines.</li>
+                            <li>Designed notification system for transaction alerts and system updates, ensuring timely user communication.</li>
+                            <li>Utilized Angular Material for consistent, accessible UI components across the application.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Angular Material</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">UPI Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skillhub IT Solution -->
+            <div class="timeline-item" data-animate="fade-up" data-delay="0.4">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-glow"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-role">Full Stack Developer</h3>
+                        <span class="timeline-company">Skillhub IT Solution · Full-time</span>
+                        <span class="timeline-location">Hybrid</span>
+                        <span class="timeline-date">Apr 2021 - Mar 2022 · 1 year</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Launched my professional career developing e-commerce platforms and RESTful APIs. Established strong foundations in authentication systems, responsive design, and full-stack development while delivering production-ready applications.</p>
+                        <ul class="timeline-responsibilities">
+                            <li>Developed full-featured e-commerce platforms with Angular frontend and Node.js backend, implementing product catalogs, cart functionality, and order management.</li>
+                            <li>Architected secure authentication system using JSON Web Tokens and bcryptjs, implementing role-based access control for admin and customer portals.</li>
+                            <li>Built responsive user interfaces with Tailwind CSS, ensuring optimal experience across desktop and mobile devices.</li>
+                            <li>Designed and implemented RESTful APIs for product management, user operations, and payment processing workflows.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section" aria-label="Skills section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">Expertise</span>
+                <h2 class="section-title">Technologies I Work With</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category" data-animate="fade-up" data-delay="0.1">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="category-title">Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                            <span class="skill-name">Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <span class="skill-name">RxJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <span class="skill-name">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate="fade-up" data-delay="0.2">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="category-title">Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span class="skill-name">Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                            <span class="skill-name">REST APIs</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <span class="skill-name">Authentication</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-key"></i></div>
+                            <span class="skill-name">JWT</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                            <span class="skill-name">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate="fade-up" data-delay="0.3">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="category-title">Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paw"></i></div>
+                            <span class="skill-name">Mongoose</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <span class="skill-name">SQL Basics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate="fade-up" data-delay="0.4">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="category-title">Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paper-plane"></i></div>
+                            <span class="skill-name">Postman</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-npm"></i></div>
+                            <span class="skill-name">npm</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-sync"></i></div>
+                            <span class="skill-name">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section" aria-label="Projects section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-building" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Enterprise Management Platform</h3>
+                        <p class="project-description">A scalable web platform designed to streamline business
+                            workflows, user management and operational processes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A responsive e-commerce application with product management,
+                            authentication, shopping cart and order workflows.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animate="fade-up" data-delay="0.3">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Real-Time Dashboard</h3>
+                        <p class="project-description">A modern analytics dashboard for monitoring business metrics and
+                            operational data in real time.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animate="fade-up" data-delay="0.4">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Employee Management System</h3>
+                        <p class="project-description">A full-stack application for employee records, authentication,
+                            roles, permissions and organizational workflows.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Featured Project -->
+            <div class="featured-project" data-animate="fade-up">
+                <div class="featured-content">
+                    <span class="featured-label">Featured Project</span>
+                    <h3 class="featured-title">Custom Web Application</h3>
+                    <p class="featured-description">A comprehensive web solution built with modern architecture,
+                        featuring real-time updates, responsive design, and scalable backend infrastructure.</p>
+                    <div class="featured-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <div class="featured-actions">
+                        <a href="#" class="btn btn-primary">
+                            <span>Live Demo</span>
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-visual">
+                    <div class="featured-mockup">
+                        <div class="mockup-browser">
+                            <div class="mockup-header">
+                                <div class="mockup-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-line"></div>
+                                <div class="mockup-line short"></div>
+                                <div class="mockup-grid">
+                                    <div class="mockup-card"></div>
+                                    <div class="mockup-card"></div>
+                                    <div class="mockup-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section" aria-label="Services section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">Services</span>
+                <h2 class="section-title">What I Can Build</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Full-Stack Web Applications</h3>
+                    <p class="service-description">Scalable applications using modern frontend and backend architecture
+                        tailored to your business needs.</p>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="0.15">
+                    <div class="service-icon">
+                        <i class="fas fa-plug" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">REST API Development</h3>
+                    <p class="service-description">Secure and maintainable APIs for web and mobile applications with
+                        proper documentation.</p>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="service-icon">
+                        <i class="fab fa-angular" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Angular Development</h3>
+                    <p class="service-description">Responsive and interactive enterprise-grade frontend applications
+                        with modern Angular practices.</p>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="0.25">
+                    <div class="service-icon">
+                        <i class="fab fa-node-js" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">Node.js Development</h3>
+                    <p class="service-description">Fast and scalable backend services optimized for performance and
+                        reliability.</p>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="0.3">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">MongoDB Solutions</h3>
+                    <p class="service-description">Efficient database structures and data-driven applications with
+                        optimized queries.</p>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="0.35">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="service-title">UI Development</h3>
+                    <p class="service-description">Modern responsive interfaces with strong UX principles and
+                        accessibility standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy section" aria-label="Developer philosophy">
+        <div class="container">
+            <div class="philosophy-content" data-animate="fade-up">
+                <blockquote class="philosophy-quote">
+                    <span class="quote-mark">"</span>
+                    I don't just build interfaces. I build reliable digital experiences.
+                    <span class="quote-mark">"</span>
+                </blockquote>
+                <p class="philosophy-text">
+                    My focus is writing maintainable code, creating intuitive interfaces and delivering solutions that
+                    perform well in real-world environments. Every line of code is written with the next developer in
+                    mind.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section" aria-label="Education section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-eyebrow">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+
+            <div class="education-grid">
+                <div class="education-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Master of Computer Applications</h3>
+
+                        <span class="education-abbreviation">MCA</span>
+
+                        <p class="education-institution">
+                            Savitribai Phule Pune University
+                        </p>
+
+                        <span class="education-year">2022 - 2024</span>
+
+                        <div class="education-tech">
+                            <span class="education-tech-tag">AI &amp; ML</span>
+                            <span class="education-tech-tag">DevOps</span>
+                            <span class="education-tech-tag">Python</span>
+                            <span class="education-tech-tag">DSA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="education-icon">
+                        <i class="fas fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Bachelor of Computer Applications</h3>
+
+                        <span class="education-abbreviation">BCA</span>
+
+                        <p class="education-institution">
+                            Dr. Babasaheb Ambedkar Marathwada University, Aurangabad
+                        </p>
+
+                        <span class="education-year">2019 - 2022</span>
+
+                        <div class="education-tech">
+                            <span class="education-tech-tag">C++</span>
+                            <span class="education-tech-tag">Java</span>
+                            <span class="education-tech-tag">JavaScript</span>
+                            <span class="education-tech-tag">MySQL</span>
+                            <span class="education-tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications" data-animate="fade-up" data-delay="0.3">
+                <h3 class="certifications-title">Certifications & Achievements</h3>
+                <ul class="certifications-list">
+                    <li><i class="fas fa-certificate" aria-hidden="true"></i> Relevant certifications and courses</li>
+                    <li><i class="fas fa-trophy" aria-hidden="true"></i> Technical achievements and recognitions</li>
+                    <li><i class="fas fa-award" aria-hidden="true"></i> Workshops and training programs attended</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section" aria-label="Contact section">
+        <div class="container">
+            <div class="contact-header" data-animate="fade-up">
+                <h2 class="contact-title">Let's build something great together.</h2>
+                <p class="contact-subtitle">Have a project, opportunity, or idea? I'd love to hear about it.</p>
+            </div>
+
+            <div class="contact-content">
+
+                <!-- ============================================
+         CONTACT INFORMATION
+         ============================================ -->
+
+                <div class="contact-info" data-animate="fade-up" data-delay="0.1">
+
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                Email
+                            </span>
+
+                            <a href="#" data-email class="contact-value"></a>
+                        </div>
+                    </div>
+
+
+                    <!-- LinkedIn -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                LinkedIn
+                            </span>
+
+                            <a href="#" data-social="linkedin" target="_blank" rel="noopener noreferrer"
+                                class="contact-value">
+                                <span data-social-label></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- GitHub -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                GitHub
+                            </span>
+
+                            <a href="#" data-social="github" target="_blank" rel="noopener noreferrer"
+                                class="contact-value">
+                                <span data-social-label></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Instagram -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                Instagram
+                            </span>
+
+                            <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer"
+                                class="contact-value">
+                                <span data-social-label></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- X -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                X
+                            </span>
+
+                            <a href="#" data-social="twitter" target="_blank" rel="noopener noreferrer"
+                                class="contact-value">
+                                <span data-social-label></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                Phone
+                            </span>
+
+                            <a href="#" data-phone class="contact-value">
+
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- Location -->
+                    <!-- Location -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <span class="contact-label">
+                                Location
+                            </span>
+
+                            <a href="#" data-location target="_blank" rel="noopener noreferrer"
+                                class="contact-value"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ============================================
+         CONTACT FORM
+         ============================================ -->
+
+                <form class="contact-form" id="contactForm" data-animate="fade-up" data-delay="0.2" novalidate>
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">
+                            Name
+                        </label>
+
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name"
+                            autocomplete="name" required aria-required="true">
+
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com"
+                            autocomplete="email" required aria-required="true">
+
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject" class="form-label">
+                            Subject
+                        </label>
+
+                        <input type="text" id="subject" name="subject" class="form-input"
+                            placeholder="What's this about?" required aria-required="true">
+
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+
+                        <textarea id="message" name="message" class="form-textarea" rows="5"
+                            placeholder="Tell me about your project..." required aria-required="true"></textarea>
+
+                        <span class="form-error" aria-live="polite"></span>
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-primary btn-full magnetic-btn">
+                        <span>
+                            Send Message
+                        </span>
+
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>Mahesh Patil<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p class="footer-tagline">MEAN Stack Developer</p>
+                    <p class="footer-description">Building modern web experiences with clean code and thoughtful design.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-nav">
+                            <!-- <li><a href="#home">Home</a></li> -->
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Connect</h4>
+
+                        <div class="footer-social">
+
+                            <a href="#" data-social="linkedin" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-social="github" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="mailto:mspatil551@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-social="twitter" target="_blank" rel="noopener noreferrer"
+                                aria-label="Twitter">
+                                <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span class="current-year"></span>
+                    <span data-site-name></span>.
+                    All rights reserved.
+                </p>
+
+                <p class="footer-credit">
+                    Designed &amp; Developed by
+                    <span data-site-name></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/three-scene.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/config.js"></script>
+</body>
+
+</html>
