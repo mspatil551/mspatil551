@@ -82,7 +82,7 @@
     // Animate a single counter
     function animateCounter(counter) {
         const target = parseInt(counter.dataset.target) || 0;
-        const duration = 2000; // 2 seconds
+        const duration = 1000; // 2 seconds
         const startTime = performance.now();
         const startValue = 0;
         
