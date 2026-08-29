@@ -514,3 +514,71 @@
         border: 1px solid black;
     }
 }
+
+/* Hide custom cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .cursor-dot,
+    .cursor-ring {
+        display: none;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .education-card,
+  .education-icon,
+  .score-fill{
+    animation:none !important;
+    transition:none !important;
+  }
+  .education-card{ opacity:1; transform:none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .education-card,
+  .education-icon,
+  .score-fill{
+    animation:none !important;
+    transition:none !important;
+  }
+  .education-card{ opacity:1; transform:none; }
+}
+
+/* Hide custom cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+    .cursor-dot,
+    .cursor-ring {
+        display: none;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
