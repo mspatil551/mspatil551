@@ -300,11 +300,82 @@
                 }
             });
             
-            if (isValid) {
-                // Show success message
-                showFormMessage(form, 'Message sent successfully!', 'success');
-                form.reset();
+            
+if (isValid) {
+    const submitButton = form.querySelector('button[type="submit"]');
+    const buttonText = submitButton.querySelector('span');
+
+    const name = form.querySelector('#name').value.trim();
+    const email = form.querySelector('#email').value.trim();
+    const subject = form.querySelector('#subject').value.trim();
+    const message = form.querySelector('#message').value.trim();
+
+    submitButton.disabled = true;
+    if (buttonText) buttonText.textContent = 'Sending...';
+
+    async function sendEmail() {
+        try {
+            // Load EmailJS SDK without editing HTML
+            if (!window.emailjs) {
+                await new Promise((resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.src =
+                        'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+                    script.onload = resolve;
+                    script.onerror = reject;
+                    document.head.appendChild(script);
+                });
             }
+
+            // Replace with your EmailJS Public Key
+            emailjs.init({
+                publicKey: 'LrQQJiufVdkdyqY39'
+            });
+
+            await emailjs.send(
+                'service_j4uhiei',
+                'template_ajfkomj',
+                {
+                    from_name: name,
+                    from_email: email,
+                    subject: subject,
+                    message: message,
+                    reply_to: email
+                }
+            );
+
+            showFormMessage(
+                form,
+                'Message sent successfully! Thank you for contacting me.',
+                'success'
+            );
+
+            form.reset();
+
+            inputs.forEach(input => {
+                input.classList.remove('success', 'error');
+                const errorEl =
+                    input.parentElement.querySelector('.form-error');
+                if (errorEl) errorEl.textContent = '';
+            });
+
+        } catch (error) {
+            console.error('Email sending failed:', error);
+
+            showFormMessage(
+                form,
+                'Unable to send your message. Please try again later.',
+                'error'
+            );
+        } finally {
+            submitButton.disabled = false;
+            if (buttonText) buttonText.textContent = 'Send Message';
+        }
+    }
+
+    sendEmail();
+}
+
         });
         
         function validateField(field) {
@@ -316,13 +387,13 @@
             if (field.hasAttribute('required') && !value) {
                 error = 'This field is required';
             }
-            // Email validation
-            else if (field.type === 'email' && value) {
-                const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-                if (!emailRegex.test(value)) {
-                    error = 'Please enter a valid email address';
-                }
-            }
+            // // Email validation
+            // else if (field.type === 'email' && value) {
+            //     const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+            //     if (!emailRegex.test(value)) {
+            //         error = 'Please enter a valid email address';
+            //     }
+            // }
             // Min length for message
             else if (field.name === 'message' && value.length < 10) {
                 error = 'Message must be at least 10 characters';

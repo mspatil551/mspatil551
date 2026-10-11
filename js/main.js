@@ -25,6 +25,7 @@
             this.initLazyLoading();
             this.initPerformanceOptimizations();
             this.initErrorHandling();
+            this.initCertificate();
 
             this.initialized = true;
 
@@ -196,6 +197,24 @@
                         );
                     });
                 });
+        },
+
+        // certifate 
+        initCertificate: function () {
+            document.querySelectorAll("[data-credential-link]").forEach((link) => {
+        const href = (link.getAttribute("href") || "").trim();
+
+        if (!href || href === "#") {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                window.alert("Please add the certificate's credential URL to this link in your HTML.");
+            });
+            return;
+        }
+
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+    });
         }
     };
 
@@ -356,3 +375,7 @@
         'font-size: 14px; color: #9CA3AF;'
     );
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+});
